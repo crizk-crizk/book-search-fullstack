@@ -17,12 +17,11 @@ const bookSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  //The Book's information link as returned from the Google Books API
   link: {
     type: String,
     required: true,
-  }
-})
+  },
+});
 
 const Book = mongoose.model("Book", bookSchema);
 
