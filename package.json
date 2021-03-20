@@ -1,5 +1,6 @@
 {
 	"name": "book-search-fullstack",
+	"type": "module",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
@@ -14,7 +15,9 @@
 	"license": "ISC",
 	"dependencies": {
 		"concurrently": "^6.0.0",
+		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
+		"mongoose": "^5.12.1",
 		"nodemon": "^2.0.7"
 	},
 	"c": "proxy"
