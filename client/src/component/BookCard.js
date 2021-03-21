@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import API from "../utils/API";
 
 const BookCard = ({ book, type }) => {
   const handleBookSave = (event) => {
@@ -12,7 +13,9 @@ const BookCard = ({ book, type }) => {
     window.open(book.link);
   };
 
-  const handleBookDelete = () => {};
+  const handleBookDelete = () => {
+    API.deleteSavedBook(book._id);
+  };
 
   return (
     <div>

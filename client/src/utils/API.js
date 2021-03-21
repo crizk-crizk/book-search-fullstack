@@ -26,6 +26,11 @@ const api = {
       return results.data;
     });
   },
+
+  deleteSavedBook: (bookID) => {
+    return axios.delete(`/api/books/${bookID}`);
+  },
+
 };
 
 export default api;
