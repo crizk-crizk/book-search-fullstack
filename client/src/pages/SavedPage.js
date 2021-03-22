@@ -3,6 +3,8 @@ import BookList from "../component/BookList";
 import { SAVED_LIST } from "../utils/actions";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
+import Container from "react-bootstrap/Container";
+
 
 const SavedPage = () => {
   const [state, dispatch] = useStoreContext();
@@ -22,10 +24,10 @@ const SavedPage = () => {
   });
 
   return (
-    <div>
+    <Container fluid >
       <p>Saved Books</p>
       <BookList books={state.savedlist} />
-    </div>
+    </Container>
   );
 };
 

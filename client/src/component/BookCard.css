@@ -1,0 +1,23 @@
+.card-body{
+  width: 100% !important;
+}
+.bookCard {
+  align-items: center;
+  margin-top: 2em;
+}
+.bookCardTitle, .bookCardAuthor {
+  height: 1.25em;
+  overflow-y: hidden;
+}
+.bookCardDescription{
+  height: 10rem;
+  overflow-y: scroll;
+}
+.bookCardImg{
+  max-width: 150px;
+  max-height: 200px;
+  margin-top: 0.5em;
+}
+.viewButton{
+  margin-right: 1em;
+}

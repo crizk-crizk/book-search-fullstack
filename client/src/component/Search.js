@@ -18,6 +18,7 @@ const Search = () => {
         list: result
       })
     })
+    searchRef.current.value = "";
   }
 
   return (
@@ -27,7 +28,6 @@ const Search = () => {
       <input ref={searchRef}>
       </input>
       <button type="submit">Search</button>
-      {/* disabled={state.loading} */}
       </form>
     </div>
   )
