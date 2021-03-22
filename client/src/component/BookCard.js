@@ -31,12 +31,14 @@ const BookCard = ({ book, type }) => {
     <Col lg="3" className="bookCardWrapper">
       {/* ------------ */}
       <Card className="bookCard">
+        <div className="imgDiv">
         <Card.Img
           variant="top"
           src={book.image}
           alt="Book cover"
           className="bookCardImg"
         />
+        </div>
         <Card.Body>
           <Card.Title className="bookCardTitle">{book.title}</Card.Title>
           <Card.Text>

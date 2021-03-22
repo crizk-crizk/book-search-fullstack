@@ -2,8 +2,10 @@
 .App {
   text-align: center;
   font-family: "Bitter", serif;
+  margin-bottom: 50px;
 }
 .container-fluid {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
