@@ -23,6 +23,7 @@ const api = {
 
   getSavedBooks: () => {
     return axios.get("/api/books").then((results) => {
+      console.log("results: ", results);
       return results.data;
     });
   },
