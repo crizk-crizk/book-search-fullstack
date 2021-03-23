@@ -6,9 +6,9 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node backend/server.js",
-		"server": "nodemon backend/server.js --watch",
+		"server": "nodemon server.js --watch",
 		"client": "cd client && npm run start",
-		"dev": "concurrently \"npm run backend/server.js\" \"npm run client\"",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"build": "cd client && npm run build",
 		"heroku-postbuild": "npm run build"
 	},
