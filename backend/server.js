@@ -13,7 +13,7 @@ const app = express();
 app.use([express.urlencoded({ extended: true }), express.json()]);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("../client/build"));
 }
 
 app.use("/api/books", bookRoutes);
