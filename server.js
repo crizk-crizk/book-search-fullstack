@@ -7,6 +7,7 @@ import bookRoutes from "./routes/bookRoutes.js";
 dotenv.config();
 connectDB();
 
+const __dirname = path.resolve();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
